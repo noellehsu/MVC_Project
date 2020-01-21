@@ -1,0 +1,140 @@
+﻿@using MvcHtmlHelpers.Models
+@model Register
+
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <title>AllHelpers</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        div.alert {
+            border: 1px solid black;
+            font-weight: 900;
+            margin-top: 10px;
+        }
+
+        div.well {
+            background-color: lightpink !important;
+            text-align: center !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="well"><h2>MVC HTML Helpers</h2></div>
+        <!--Label-->
+        <div class="alert bg-info">1.Html.Label()及LabelFor()</div>
+        @Html.Label("Name")
+        @Html.LabelFor(m => m.Name)
+
+        <div class="alert bg-danger">每個HTML Helpers可傳入htmlAttributes參數, 加入額外的屬性設定</div>
+        @Html.Label("Name", htmlAttributes: new { @class = "text-danger", style = "background-color:yellow", title = "FUll Name" })
+        @Html.LabelFor(m => m.Name, htmlAttributes: new { @class = "text-danger", style = "background-color:yellow", title = "你的姓名" })
+        <!--以下省略「htmlAttributes:」, 效果相同-->
+        @Html.LabelFor(m => m.Name, new { @class = "text-danger", style = "background-color:yellow", title = "你的姓名" })
+
+        <!--TextBox-->
+        <div class="alert alert-success">2.Html.TextBox()及TextBoxFor()</div>
+        @Html.TextBox("Name")
+        @Html.TextBoxFor(m => m.Name)
+
+        <!--Password-->
+        <div class="alert alert-info">3.Html.Password()及PasswordFor()</div>
+        @Html.Password("Name")
+        @Html.PasswordFor(m => m.Name)
+
+        <!--DropDownList-->
+        <div class="alert alert-success">4.Html.DropDownList()及.DropDownListFor()</div>
+        @{
+            List<SelectListItem> CityList = new List<SelectListItem>
+            {
+                new SelectListItem{ Selected=false, Text="選擇縣市", Value="-1"},
+                new SelectListItem{ Selected=false, Text="台北", Value="0"},
+                new SelectListItem{ Selected=false, Text="桃園", Value="1"}
+            };
+        }
+
+        @Html.DropDownList("City", CityList)
+        @Html.DropDownListFor(m => m.City, CityList)
+
+        <!--ListBox-->
+        <div class="alert alert-info">5.Html.ListBox()及ListBoxFor()</div>
+        @{
+            List<SelectListItem> CommutermodeList = new List<SelectListItem>
+            {
+                new SelectListItem{ Text="腳踏車", Value="1", Selected = false},
+                new SelectListItem{ Text="機車", Value="2", Selected = true},
+                new SelectListItem{ Text="汽車", Value="3", Selected = false},
+            };
+        }
+
+        @Html.ListBox("Commutemode", CommutermodeList)
+        @Html.ListBoxFor(m => m.Commutermode, CommutermodeList)
+
+        <!--Radio-->
+        <div class="alert alert-success">6.Html.RadioButton()及RadioButtonFor()</div>
+        女性 @Html.RadioButton("Gender", "Female")
+        男性 @Html.RadioButton("Gender", "Male")
+
+        女性 @Html.RadioButtonFor(m => m.Gender, "Female")
+        男性 @Html.RadioButtonFor(m => m.Gender, "Male")
+
+        <!--CheckBox-->
+        <div class="alert alert-info">7.Html.CheckBox()及CheckBoxFor()</div>
+        同意 @Html.CheckBox("同意")
+        不同意 @Html.CheckBoxFor(m => m.Terms)
+
+        <!--TextArea-->
+        <div class="alert alert-success">Html.TextArea()及TextAreaFor()</div>
+        @Html.TextArea("Comment")
+        @Html.TextAreaFor(m => m.Comment, htmlAttributes: new { @class = "form-control" })
+
+        <!--Display-->
+        <div class="alert alert-info">Html.DisplayName,DisplayNameFor()及Display(),DisplayFor()</div>
+        @{ 
+            ViewData["Email"] = "kevin@gmail.com";
+        }
+
+        @Html.DisplayName("Email"):
+        @Html.Display("Email") <br />
+        @Html.DisplayNameFor(m=>m.Email):
+        @Html.DisplayFor(m=>m.Email)
+
+        <div class="alert alert-success">Html.Hidden()及HiddenFor()</div>
+        @Html.Hidden("Id")
+        @Html.HiddenFor(m=>m.Id)
+
+        <div class="alert alert-info">Html.Raw()</div>
+        @{ 
+            var msg = @"<button type=""button"" onclick=""alert('Hi...HTML Raw!')"">Click Me!</button>";
+        }
+        @Html.Raw(msg)
+        @msg
+
+
+        <div class="alert alert-info">Html.ActionLink()</div>
+
+
+
+    </div>
+
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script>
+        $(function () {
+            $("<br/>").insertAfter("label");
+            $("<br/><br/>").insertAfter("input[type=text]");
+            $("<br/><br/>").insertAfter("input[type=password]");
+            $("<br/>").insertAfter("input[type=radio]");
+            $("<br/>").insertAfter("input[type=checkbox]");
+            $("<br/><br/>").insertAfter("select");
+            $("<br/><br/>").insertAfter("textarea");
+            $("<br/>").insertAfter("button");
+        });
+
+    </script>
+</body>
+</html>

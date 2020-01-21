@@ -1,0 +1,10 @@
+﻿@model ProductViewModel
+
+    <div class="card" style="width: 18rem;">
+        <img src="~/Assets/images/@Model.Photo" class="card-img-top" alt="@Model.Title">
+        <div class="card-body">
+            <h5 class="card-title">@Model.Title</h5>
+            <p class="card-text">@Model.Description</p>
+            <a href="/Details/@Model.ProductId" class="btn btn-primary">詳細資料</a>
+        </div>
+    </div>

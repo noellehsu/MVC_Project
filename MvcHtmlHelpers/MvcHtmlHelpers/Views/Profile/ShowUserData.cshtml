@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "ShowUserData";
+}
+
+<h2>ShowUserData</h2>
+
+<div class="alert alert-danger">方法1:讀取Controller/Action傳送過來的TempData["UserData"]資料</div>
+@{
+    if (TempData.Count == 0)
+    {
+        <h2>TempData沒有資料</h2>
+    }
+    else
+    {
+        <ul>
+            <li>姓名 : @TempData["Name"]</li>
+            <li>密碼 : @TempData["Password"]</li>
+            <li>電郵 : @TempData["Email"]</li>
+            <li>縣市 : @TempData["City"]</li>
+            <li>性別 : @TempData["Gender"]</li>
+            <li>通勤 : @TempData["CommuterMode"]</li>
+            <li>意見 : @TempData["Comment"]</li>
+            <li>條款 : @TempData["Terms"]</li>
+        </ul>
+    }
+}
+
+
+<div class="alert alert-warning">方法2:以FormCollection["Key"]讀取資料值</div>
+@{
+    if (TempData["UserData"] == null)
+    {
+        <h2>FormCollection沒有資料</h2>
+    }
+    else
+    {
+        FormCollection fc = (FormCollection)TempData["UserData"];
+        <ul>
+            <li>姓名 : @fc["Name"]</li>
+            <li>密碼 : @fc["Password"]</li>
+            <li>電郵 : @fc["Email"]</li>
+            <li>縣市 : @fc["City"]</li>
+            <li>性別 : @fc["Gender"]</li>
+            <li>通勤 : @fc["CommuterMode"]</li>
+            <li>意見 : @fc["Comment"]</li>
+            <li>條款 : @fc["Terms"]</li>
+        </ul>
+    }
+}
+
+
+
+
+
+

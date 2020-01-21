@@ -1,0 +1,67 @@
+﻿@model  double[]
+
+@{
+    ViewBag.Title = "Encode";
+
+    //將物件或資料編碼成JOSN格式資料
+    string jsonMonths = Json.Encode(ViewBag.MonthsLabel);
+    IHtmlString rawMonths = Html.Raw(jsonMonths);
+
+    //以下純粹是靠自己來進行JOSN文字編碼的練習
+    #region 手工將C#字串陣列轉換成JOSN格式陣列
+    string[] Months = (string[])ViewBag.MonthsLabel;
+
+    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+    sb.Append("[");
+    for(int i=0; i<Months.Length;i++)
+    {
+        if(i<Months.Length-1)
+        {
+            sb.Append($"\"{Months[i].ToString()}\",");
+        }
+        else
+        {
+            sb.Append($"\"{Months[i].ToString()}\"");
+        }
+    }
+
+    sb.Append("]");
+
+    string stringMonths = sb.ToString();
+    #endregion
+
+
+    string jsonTemperature = Json.Encode(Model);
+    IHtmlString rawTemperature = Html.Raw(jsonTemperature);
+
+    int counter = 0;
+}
+
+    <div class="container">
+        <div class="jumbotron alert-success">
+            <h2>以Line Chart折線圖繪製各地月均溫</h2>
+            <p>JSON Months: @jsonMonths</p>
+            <p>JSON Temperature: @jsonTemperature</p>
+            <p>Raw Months : @rawMonths</p>
+            <p>Raw Temperature : @jsonTemperature</p>
+        </div>
+
+        <canvas id="lineChart"></canvas>
+        <br />
+        <canvas id="lineChart2"></canvas>
+        <img src="~/Assets/images/JsonRaw.jpg" />
+    </div>
+
+@section endJS{
+    @*
+    1.如果是數值陣列，Html.Encode編碼後就可以傳送給JavaScript使用。
+    2.如果是字串陣列，Html.Encode編碼後雙引號會編碼成HTML，那麼就必須用Html.Raw()
+    回傳IHmlString，因為View用@符號讀取變數後，一定會進行Html.Encode，所以
+    必須用Html.Raw()原因在此    
+    *@
+   
+
+    @ChartHelpers.Line("lineChart", "Taipei", Html.Raw(stringMonths) , jsonTemperature)
+
+    @ChartHelpers.LineIHtmlString("lineChart2",  "Taoyuan", rawMonths, rawTemperature)
+}

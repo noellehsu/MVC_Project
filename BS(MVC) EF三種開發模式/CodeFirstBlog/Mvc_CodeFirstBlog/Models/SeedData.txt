@@ -1,0 +1,28 @@
+﻿namespace Mvc_CodeFirstCRUD.Migrations
+{
+    using System;
+    using System.Data.Entity;
+    using System.Data.Entity.Migrations;
+    using System.Linq;
+    using Mvc_CodeFirstCRUD.Models;
+
+    internal sealed class Configuration : DbMigrationsConfiguration<Mvc_CodeFirstCRUD.Models.BlogContext>
+    {
+        public Configuration()
+        {
+            AutomaticMigrationsEnabled = false;
+        }
+
+        protected override void Seed(Mvc_CodeFirstCRUD.Models.BlogContext context)
+        {
+            //  This method will be called after migrating to the latest version.
+
+            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
+            //  to avoid creating duplicate seed data.
+            //建立三筆種子資料
+            context.Users.AddOrUpdate(x => x.Id, new User { Id = 1, UserName = "Kevin ", Email = "kevin@gmail.com" });
+            context.Users.AddOrUpdate(x => x.Id, new User { Id = 2, UserName = "David ", Email = "david@gmail.com" });
+            context.Users.AddOrUpdate(x => x.Id, new User { Id = 3, UserName = "Tom ", Email = "tom@gmail.com" });
+        }
+    }
+}

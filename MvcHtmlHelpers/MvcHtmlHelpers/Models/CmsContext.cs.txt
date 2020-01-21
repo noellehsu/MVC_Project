@@ -1,0 +1,56 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Web;
+
+namespace MvcHtmlHelpers.Models
+{
+    public class CmsContext : DbContext
+    {
+        // You can add custom code to this file. Changes will not be overwritten.
+        // 
+        // If you want Entity Framework to drop and regenerate your database
+        // automatically whenever you change your model schema, please use data migrations.
+        // For more information refer to the documentation:
+        // http://msdn.microsoft.com/en-us/data/jj591621.aspx
+    
+        public CmsContext() : base("name=CmsContext")
+        {
+        }
+
+        public System.Data.Entity.DbSet<MvcHtmlHelpers.Models.Employee> Employees { get; set; }
+        public System.Data.Entity.DbSet<MvcHtmlHelpers.Models.Register>  Registers { get; set; }
+    }
+}
+
+=====================以下為資料庫連線設定==============================================
+
+  <connectionStrings>
+    <add name="CmsContext" connectionString="Data Source=(localdb)\MSSQLLocalDB;
+	                       Initial Catalog=CmsDB;
+	                       Integrated Security=True; MultipleActiveResultSets=True; 
+						   AttachDbFilename=|DataDirectory|CmsDatabase.mdf" 
+						   providerName="System.Data.SqlClient" />
+  </connectionStrings>
+
+=============================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Data.Entity;
+using MvcHtmlHelpers.Models;	//先引用命名空間,後續使用名稱會比較簡短
+
+namespace MvcHtmlHelpers.Models
+{
+    public class CmsContext : DbContext
+    {
+        public CmsContext() : base("CmsContext")
+        {
+        }
+
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Register> Registers { get; set; }
+    }
+}

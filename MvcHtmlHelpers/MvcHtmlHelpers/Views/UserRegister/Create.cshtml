@@ -1,0 +1,79 @@
+﻿@model MvcHtmlHelpers.Models.Regiter
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<form action="/UserRegister/Create" method="post" class="form-horizontal" role="form">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.EditorFor(x => x.Name, new { htmlAttributes = new { @class = "form-control", placeholder="請輸入姓名" } })
+            @Html.ValidationMessageFor(model => model.Name, "", new { @class="text-danger"})
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入密碼" } })
+            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入Email" } })
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Gender, htmlAttributes: new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Gender, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入你的姓名" } })
+            @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.City, htmlAttributes: new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入你的姓名" } })
+            @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Comment, htmlAttributes: new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Comment, new { htmlAttributes = new { @class = "form-control", rows = "4", cols = "80", placeholder = "請輸入建議" } })
+            @Html.ValidationMessageFor(model => model.Comment, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Terms, htmlAttributes: new { @class = "col-md-2 control-label"})
+        <div class="col-md-10">
+            <div class="checkbox">
+                @Html.EditorFor(model => model.Terms)
+                @Html.ValidationMessageFor(model => model.Terms, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="提交" class="btn btn-primary" />
+        </div>
+    </div>
+</form>
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval");
+}

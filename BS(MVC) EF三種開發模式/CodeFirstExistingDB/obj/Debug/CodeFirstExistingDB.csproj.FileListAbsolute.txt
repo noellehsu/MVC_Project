@@ -1,0 +1,12 @@
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstExistingDB\bin\Debug\CodeFirstExistingDB.exe.config
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstExistingDB\bin\Debug\CodeFirstExistingDB.exe
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstExistingDB\bin\Debug\CodeFirstExistingDB.pdb
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstExistingDB\bin\Debug\EntityFramework.dll
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstExistingDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstExistingDB\bin\Debug\EntityFramework.xml
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstExistingDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstExistingDB\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstExistingDB\obj\Debug\CodeFirstExistingDB.csprojAssemblyReference.cache
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstExistingDB\obj\Debug\CodeFirstExistingDB.csproj.CopyComplete
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstExistingDB\obj\Debug\CodeFirstExistingDB.exe
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstExistingDB\obj\Debug\CodeFirstExistingDB.pdb

@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-3.4.1.min.js"></script>
+    <script src="../Assets/js/Colors.js"></script>
+
+
+    <style>
+
+        #urlText {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        #result {
+            display: block;
+            border: 5px dashed black;
+        }
+
+        #urlText, #result {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron alert-success">
+            <h3>以jQuery四個Ajax指令呼叫遠端API，取回JSON資料</h3>
+        </div>
+        <button class="btn btn-primary" id="ajax">以.ajax()呼叫遠端API</button>
+        <button class="btn btn-success" id="post">以jQuery.post()呼叫遠端API</button>
+        <button class="btn btn-warning" id="get">以jQuery.get()呼叫遠端API</button>
+        <button class="btn btn-info" id="getJSON">以jQuery.getJSON()呼叫遠端API</button>
+        <button class="btn btn-danger" id="reset">Reset</button>
+        <div id="urlText" class="alert alert-info"></div>
+        <div id="result" class="alert alert-danger"></div>
+    </div>
+      
+    <script>
+        var result = document.getElementById("result");
+        //取消Ajax快取
+        $.ajaxSetup({ cache: false });
+        var apiUrl = "https://localhost:44379/JsonDataAPI/GetCarSalesNumber";
+        //var apiUrl = "~/JsonData/getCarSalesNumberRandom";
+
+        $().ready(function () {
+            //以$.ajax()呼叫遠端API
+            $("#ajax").click(function () {
+                $.ajax({
+                    url: apiUrl,
+                    type: "POST",
+                    dataType: "json",
+                    success: function (response) {
+                        //將JSON物件轉成文字
+                        jsonText = JSON.stringify(response);
+                        result.innerHTML = jsonText;
+                        result.style.display = "block";
+                        result.className = getAlertStyle();
+                    }
+                });
+            });
+
+            //以$.post()呼叫遠端API
+            $("#post").click(function () {
+                $.post(apiUrl, function (response) {
+                    //顯示JSON資料
+                    showAjaxResult(response)
+                });
+            });
+
+            //以$.get()呼叫遠端API
+            $("#get").click(function () {
+                $.get(apiUrl, function (response) {
+                    //顯示JSON資料
+                    showAjaxResult(response)
+                });
+            });
+
+              //以$.getJSON(()呼叫遠端API
+            $("#getJSON").click(function () {
+                $.getJSON(apiUrl, function (response) {
+                    //顯示JSON資料
+                    showAjaxResult(response)
+                });
+            });
+
+            //顯示API URL
+            $("#urlText").text("API URL:" + apiUrl);
+
+            //顯示JSON 資料
+            function showAjaxResult(response) {
+                result.innerHTML = JSON.stringify(response);
+                result.className = getAlertStyle();
+                result.style.display = "block";
+            }
+            //Reset
+            $("#reset").click(function () {
+                result.style.display = "none";
+                result.innerHTML = "";
+
+            });
+
+        });
+
+
+
+    </script>
+</body>
+</html>

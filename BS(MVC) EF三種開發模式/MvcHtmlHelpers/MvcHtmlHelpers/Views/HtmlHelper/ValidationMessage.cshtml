@@ -1,0 +1,29 @@
+﻿@model MvcHtmlHelpers.Models.User
+
+@{
+    ViewBag.Title = "Validation驗證方法";
+}
+
+
+<h2>ValidationMessage & ValidationSummary驗證方法</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.Label("Name") @:&nbsp; 
+    @Html.TextBox("Name")
+    @Html.ValidationMessage("Name")
+    @*@Html.ValidationMessage("Name", "", new { @class = "text-danger" })*@
+
+    <br />
+    @Html.LabelFor(m => m.Password) @:&nbsp;
+    @Html.PasswordFor(m => m.Password)
+    @Html.ValidationMessageFor(m => m.Password)
+    @*@Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })*@
+
+
+    <br />
+    <input type="submit" value="Submit" class="btn btn-primary" />
+
+    @Html.ValidationSummary()
+    @*@Html.ValidationSummary(false, "", new { @class = "text-danger" })*@
+}

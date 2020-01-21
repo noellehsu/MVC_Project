@@ -1,0 +1,31 @@
+﻿@model Clothing
+
+@{ 
+    string target = Model.Target;
+    string folder = "";
+    switch (target)
+    {
+        case "female":
+            folder="women";
+            break;
+        case "male":
+            folder="men";
+            break;
+        case "child":
+            folder="child";
+            break;
+    }
+}
+
+
+<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+    <div class="card" style="width: 18rem;">
+        <img src="~/Assets/images/@folder/@Model.MainPhoto" class="card-img-top" alt="@Model.Name">
+        <div class="card-body">
+            <p class="card-text text-center">@Model.Description</p>
+            <p class="card-text text-center">@Model.Price</p>
+        </div>
+    </div>
+</div>
+
+

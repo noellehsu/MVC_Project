@@ -1,0 +1,77 @@
+購物車設計參考資料
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+# ASP.NET MVC 3 Music Store  -- 第 8 部分：購物車與 Ajax 更新
+https://docs.microsoft.com/zh-tw/aspnet/mvc/overview/older-versions/mvc-music-store/
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+# ASP.NET Web Forms -- Shopping Cart
+https://docs.microsoft.com/en-us/aspnet/web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/shopping-cart
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+# 使用ASP.NET MVC 實作購物網站 (七) - 使用Entity Framework 連接資料庫
+https://ithelp.ithome.com.tw/articles/10158624
+這裡定義購物車Model模型及其屬性
+
+# 使用ASP.NET MVC 實作購物網站 (十四) - 會員暱稱功能
+https://ithelp.ithome.com.tw/articles/10159775
+這裡把登入Email改成會員名字
+
+# 使用ASP.NET MVC 實作購物網站 (十六) - 購物車與Session
+https://ithelp.ithome.com.tw/articles/10160180
+這裡談購物車暫時資料的儲存方式
+
+#使用ASP.NET MVC 實作購物網站 (十七) - 購物車類別設計與測試
+https://ithelp.ithome.com.tw/articles/10160355
+
+# 使用ASP.NET MVC 實作購物網站 (十八) - 購物網站首頁設計
+https://ithelp.ithome.com.tw/articles/10160453
+這裡是購物車首頁，用到Bootstrap牌卡＋《加入購物車》按鈕
+
+# 使用ASP.NET MVC 實作購物網站 (十九) - 購物車頁面設計
+https://ithelp.ithome.com.tw/articles/10160561
+
+# 使用ASP.NET MVC 實作購物網站 (二十) - 實裝購物車頁面
+https://ithelp.ithome.com.tw/articles/10160669
+
+# 使用ASP.NET MVC 實作購物網站 (二十一) - 使用Ajax將商品加入購物車
+https://ithelp.ithome.com.tw/articles/10160810
+這是是將點選《加入購物車》按鈕時，改成Ajax呼叫後端的方式
+
+# 使用ASP.NET MVC 實作購物網站 (二十二) - 使用Ajax刪除購物車商品
+https://ithelp.ithome.com.tw/articles/10160944
+
+# 使用ASP.NET MVC 實作購物網站 (二十三) - 使用Ajax清空購物車
+https://ithelp.ithome.com.tw/articles/10161099
+
+# 使用ASP.NET MVC 實作購物網站 (二十四) - 購物流程(1)
+https://ithelp.ithome.com.tw/articles/10161215
+一般的購物流程分為以下步驟
+
+1. 瀏覽商品，並將喜愛的商品加入購物車
+2. 確定購物車完成，進入結帳
+3. 填好送貨資訊，例如收貨人地址、電話、住址等
+4. 線上付款，例如線上刷卡
+5. 完成訂單
+
+# 使用ASP.NET MVC 實作購物網站 (二十五) - 購物流程(2)
+https://ithelp.ithome.com.tw/articles/10161327
+
+# 使用ASP.NET MVC 實作購物網站 (二十六) - 後台訂單列表功能
+顯示所有會員購物資料的後台
+https://ithelp.ithome.com.tw/articles/10161407
+
+# 使用ASP.NET MVC 實作購物網站 (二十八) - 後台訂單列表搜尋功能
+https://ithelp.ithome.com.tw/articles/10161571
+
+# 使用ASP.NET MVC 實作購物網站 (二十九) - 商品留言功能
+https://ithelp.ithome.com.tw/articles/10161678
+
+
+
+
+
+
+
+

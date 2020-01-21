@@ -1,0 +1,144 @@
+﻿
+@{
+    ViewBag.Title = "CreateBootstrap";
+}
+
+<h2 class="alert bg-info text-center">使用者帳號註冊 : HTML Form + Bootstrap</h2>
+
+<form action="/Profile/CreateHtml" method="post" class="form-horizontal" role="form">
+    <!--TextBox, Text-->
+    <div class="form-group">
+        <label for="name" class="col-md-2 control-label">姓名</label>
+        <div class="col-md-10">
+            <input type="text" name="name" id="name" class="form-control" />
+        </div>
+    </div>
+    <!--TextBox, Password-->
+    <div class="form-group">
+        <label for="password" class="col-md-2 control-label bg-danger">密碼</label>
+        <div class="col-md-10">
+            <input type="password" name="password" id="password" class="form-control" />
+        </div>
+    </div>
+    <!--TextBox, Email-->
+    <div class="form-group">
+        <label for="email" class="col-md-2 control-label">電郵</label>
+        <div class="col-md-10">
+            <input type="email" name="email" id="email" class="form-control" />
+        </div>
+    </div>
+    <!--DropDownList, City-->
+    <div class="form-group">
+        <label for="city" class="col-md-2 control-label">縣市</label>
+        <div class="col-md-10">
+            <select name="city" id="city" class="form-control">
+                <option value="0">請選擇</option>
+                <option value="1" selected>基隆市</option>
+                <option value="2">台北市</option>
+                <option value="3">新北市</option>
+                <option value="4">桃園市</option>
+                <option value="5">新竹市</option>
+                <option value="6">新竹縣</option>
+                <option value="7">苗粟縣</option>
+                <option value="8">台中市</option>
+                <option value="9">南投縣</option>
+                <option value="10">彰化縣</option>
+                <option value="11">雲林縣</option>
+                <option value="12">嘉義市</option>
+                <option value="13">嘉義縣</option>
+                <option value="14">台南市</option>
+                <option value="15">高雄市</option>
+                <option value="16">屏東縣</option>
+                <option value="17">台東縣</option>
+                <option value="18">花蓮縣</option>
+                <option value="19">宜蘭縣</option>
+                <option value="20">澎湖縣</option>
+                <option value="21">金門縣</option>
+                <option value="22">連江縣</option>
+            </select>
+        </div>
+    </div>
+    <!--Radio, Gender-->
+    <div class="form-group">
+        <label class="col-md-2 control-label">性別</label>
+        <div class="col-md-10">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="gender" id="gender" value="female">女性
+                </label>
+                <label>
+                    <input type="radio" name="gender" id="gender" value="male">男性
+                </label>
+                <label>
+                    <input type="radio" name="gender" id="gender" value="other">其他
+                </label>
+            </div>
+        </div>
+    </div>
+    <!--ListBox, CommuterMode-->
+    <div class="form-group">
+        <label for="commutermode" class="col-md-2 control-label">通勤</label>
+        <div class="col-md-10">
+            <select name="commutermode" id="commutermode" class="form-control" multiple>
+                <option value="1">腳踏車</option>
+                <option value="2" selected>機車</option>
+                <option value="3">汽車</option>
+                <option value="4" selected>捷運</option>
+                <option value="5">巴士</option>
+                <option value="6">高鐡</option>
+                <option value="7">飛機</option>
+            </select>
+        </div>
+    </div>
+    <!--TextArea, Comment-->
+    <div class="form-group">
+        <label for="comment" class="col-md-2 control-label">意見</label>
+        <div class="col-md-10">
+            <textarea name="comment" id="comment" class="form-control" rows="4" cols="80" maxlength="255" placeholder="這裡可以輸入備註留言..."></textarea>
+        </div>
+    </div>
+    <!--CheckBox, Terms-->
+    <div class="form-group">
+        <label class="col-md-2 control-label">條款</label>
+        <div class="col-md-10">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="terms" id="terms" value="true" />同意
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Submit提交" class="btn btn-primary" />
+            <input type="reset" value="Reset重置" class="btn btn-danger" />
+        </div>
+    </div>
+</form>
+
+@section topCSS{
+    <style>
+        input, select, textarea {
+            max-width:none !important;
+        }
+
+        h2.alert {
+            margin-left: -15px !important;
+        }
+
+        label.col-md-2 {
+            padding-top: 0px !important;
+            background-color: aquamarine;
+            border-radius: 5px;
+            line-height: 34px !important;
+        }
+
+        input.form-control:hover {
+            background-color:lightpink !important;
+        }
+
+        input.form-control:focus {
+            background-color: antiquewhite !important;
+        }
+    </style>
+}

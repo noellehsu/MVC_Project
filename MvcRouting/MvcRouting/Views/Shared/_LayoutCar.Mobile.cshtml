@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    @Styles.Render("~/Content/Mobile/css", "~/Content/jquerymobile/css")
+    @Scripts.Render("~/bundles/jquery", "~/bundles/jquerymobile")
+
+    @RenderSection("topCSS", required: false)
+    @RenderSection("topJS", required: false)
+
+    <style>
+        h1.ui-title {
+            margin-left: 10px !important;
+            margin-right: 10px !important;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $.mobile.ajaxEnabled = false;
+        });
+    </script>
+</head>
+<body>
+    
+    @RenderBody()
+
+    <div data-role="footer" data-position="fixed">
+        @if (string.IsNullOrEmpty(ViewBag.Cache))
+        {
+            <h1>&copy; 汽車情報網 @DateTime.Now.Year</h1>
+        }
+        else
+        {
+            <h1>&copy; 汽車情報網 @DateTime.Now.Year,  @ViewBag.Cache</h1>
+        }
+    </div>
+
+    @RenderSection("endCSS", required: false)
+    @RenderSection("endJS", required: false)
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿
+@functions{
+    public static string getBookTitle()
+    {
+        string bookTitle = System.Web.Configuration.WebConfigurationManager.AppSettings["BookTitle"];
+        if (!string.IsNullOrEmpty(bookTitle))
+        {
+            return bookTitle;
+        }
+
+        return "查無資料!";
+    }
+
+    /*
+    public static IHtmlString getJsonRawString(string[] stringArray)
+    {
+        IHtmlString result = null;
+        string jsonText;
+        if (stringArray.Length > 0)
+        {
+            jsonText = Json.Encode(stringArray);
+            //在Global @function無法使用Html.Raw()做JSON編碼
+            //故改用MvcHtmlString.Create()方法
+            result = System.Web.Mvc.MvcHtmlString.Create(jsonText);
+        }
+
+        return result;
+    }
+    */
+
+    //泛型方法
+    public static IHtmlString getJsonRawString<T>(T dataArray)
+    {
+        IHtmlString result = null;
+        string jsonText;
+        if (dataArray != null)
+        {
+            jsonText = Json.Encode(dataArray);
+            //在Global @function無法使用Html.Raw()做JSON編碼
+            //故改用MvcHtmlString.Create()方法建立不做HTML編碼的字串
+            result = System.Web.Mvc.MvcHtmlString.Create(jsonText);
+        }
+
+        return result;
+    }
+}

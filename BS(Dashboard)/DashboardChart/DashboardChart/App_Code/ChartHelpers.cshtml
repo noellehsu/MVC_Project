@@ -1,0 +1,84 @@
+﻿@helper Line(string canvasName, string title, IHtmlString dataLabel, string Dataset)
+{
+    <script>
+            var ctx = document.getElementById("@canvasName");
+            var chart = new Chart(ctx, {
+                type: "line",
+                data: {
+                    labels: @dataLabel,
+                    datasets: [{
+                        label: '@title',
+                        data: @Dataset,
+                        fill: 1,
+                        backgroundColor: 'rgba(255,165,0,0.3)',
+                        borderColor: 'rgb(255,165,0)',
+                        pointStyle: "circle",
+                        pointBackgroundColor: 'rgb(0,255,0)',
+                        pointRadius: 5,
+                        pointHoverRadius: 10,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    title: {
+                        display: true,
+                        fontSize: 26,
+                        text: '@title' + '1 - 6月氣溫平均值'
+                    },
+                    tooltips: {
+                        mode: 'point',
+                        intersect: true,
+                    },
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            fontColor: 'black',
+                        }
+                    }
+                }
+            });
+    </script>
+}
+
+
+@helper LineIHtmlString(string canvasName, string title, IHtmlString dataLabels,  IHtmlString Dataset)
+{
+    <script>
+            var ctx2 = document.getElementById("@canvasName");
+            var chart2 = new Chart(ctx2, {
+                type: "line",
+                data: {
+                    labels: @dataLabels,
+                    datasets: [{
+                        label: '@title',
+                        data: @Dataset,
+                        fill: 1,
+                        backgroundColor: 'rgba(255,165,0,0.3)',
+                        borderColor: 'rgb(255,165,0)',
+                        pointStyle: "circle",
+                        pointBackgroundColor: 'rgb(0,255,0)',
+                        pointRadius: 5,
+                        pointHoverRadius: 10,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    title: {
+                        display: true,
+                        fontSize: 26,
+                        text:  '@title '+ '1 - 6月氣溫平均值'
+                    },
+                    tooltips: {
+                        mode: 'point',
+                        intersect: true,
+                    },
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            fontColor: 'black',
+                        }
+                    }
+                }
+            });
+    </script>
+}

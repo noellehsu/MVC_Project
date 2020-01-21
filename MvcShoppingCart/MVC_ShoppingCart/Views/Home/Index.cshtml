@@ -1,0 +1,13 @@
+﻿@model IEnumerable<ProductViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    @foreach(var item in Model)
+    {
+        @Html.Partial("_ProductPartial", item)
+    }
+</div>
+

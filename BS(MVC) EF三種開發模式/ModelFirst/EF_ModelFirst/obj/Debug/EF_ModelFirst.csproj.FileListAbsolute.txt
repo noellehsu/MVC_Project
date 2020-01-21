@@ -1,0 +1,14 @@
+C:\MvcExamples3nd\Chapter11\EF_ModelFirst\EF_ModelFirst\bin\Debug\EF_ModelFirst.exe.config
+C:\MvcExamples3nd\Chapter11\EF_ModelFirst\EF_ModelFirst\bin\Debug\EF_ModelFirst.exe
+C:\MvcExamples3nd\Chapter11\EF_ModelFirst\EF_ModelFirst\bin\Debug\EF_ModelFirst.pdb
+C:\MvcExamples3nd\Chapter11\EF_ModelFirst\EF_ModelFirst\bin\Debug\EntityFramework.dll
+C:\MvcExamples3nd\Chapter11\EF_ModelFirst\EF_ModelFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\MvcExamples3nd\Chapter11\EF_ModelFirst\EF_ModelFirst\bin\Debug\EntityFramework.xml
+C:\MvcExamples3nd\Chapter11\EF_ModelFirst\EF_ModelFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\MvcExamples3nd\Chapter11\EF_ModelFirst\EF_ModelFirst\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\MvcExamples3nd\Chapter11\EF_ModelFirst\EF_ModelFirst\bin\Debug\zh-Hant\EntityFramework.SqlServer.resources.dll
+C:\MvcExamples3nd\Chapter11\EF_ModelFirst\EF_ModelFirst\obj\Debug\EF_ModelFirst.csprojAssemblyReference.cache
+C:\MvcExamples3nd\Chapter11\EF_ModelFirst\EF_ModelFirst\obj\Debug\EF_ModelFirst.csproj.CoreCompileInputs.cache
+C:\MvcExamples3nd\Chapter11\EF_ModelFirst\EF_ModelFirst\obj\Debug\EF_ModelFirst.csproj.CopyComplete
+C:\MvcExamples3nd\Chapter11\EF_ModelFirst\EF_ModelFirst\obj\Debug\EF_ModelFirst.exe
+C:\MvcExamples3nd\Chapter11\EF_ModelFirst\EF_ModelFirst\obj\Debug\EF_ModelFirst.pdb

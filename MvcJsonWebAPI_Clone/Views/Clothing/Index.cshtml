@@ -1,0 +1,43 @@
+﻿@model Clothing
+@{
+    ViewBag.Title = "Index";
+    Clothing clothing = (Clothing)Model;   //加入這個宣告讓他變成強型別
+
+}
+
+
+<div class="container">
+
+
+    <div class="row">
+
+
+        <div class="col-lg-6">
+
+            <img src="~/Assets/images/@clothing.MainPhoto">
+
+        </div>
+
+        <div class="col-lg-4">
+
+            <h1>@clothing.Name</h1>
+
+            <h1>價格:@clothing.Price</h1>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+@foreach (var item in clothing.Photos.ToList())
+{
+
+    <img src="~/Assets/images/@item"> 
+
+
+        }
+
+
+

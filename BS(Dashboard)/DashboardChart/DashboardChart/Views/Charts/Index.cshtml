@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Location>
+
+@{
+    ViewBag.Title = "各月平均氣溫";
+
+    //將物件或資料編碼成JOSN格式資料
+    string jsonMonths = Json.Encode(ViewBag.MonthsLabel);
+
+    var location = Model.FirstOrDefault();
+
+
+    string jsonTemperature = Json.Encode(location.Temperature);
+
+    var rawMonths = Html.Raw(jsonMonths);
+    var rawData = Html.Raw(jsonTemperature);
+
+    int i = 0;
+}
+
+<div class="container">
+    <div class="jumbotron alert-success">
+        <h2>以Line Chart折線圖繪製各地月均溫</h2>
+    </div>
+    <canvas id="lineChart"></canvas>
+</div>
+
+@section endJS{
+    @ChartHelpers.Line("lineChart", rawMonths, "Taipei", rawData)
+}

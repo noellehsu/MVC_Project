@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@{ 
+    if ((bool)TempData["RegisterResult"] == true)
+    {
+        <text>註冊成功</text>
+    }
+}

@@ -1,0 +1,28 @@
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstNewDB\EF_CodeFirstNewDB\bin\Debug\EF_CodeFirstNewDB.exe.config
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstNewDB\EF_CodeFirstNewDB\bin\Debug\EF_CodeFirstNewDB.exe
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstNewDB\EF_CodeFirstNewDB\bin\Debug\EF_CodeFirstNewDB.pdb
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstNewDB\EF_CodeFirstNewDB\bin\Debug\EntityFramework.dll
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstNewDB\EF_CodeFirstNewDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstNewDB\EF_CodeFirstNewDB\bin\Debug\EntityFramework.xml
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstNewDB\EF_CodeFirstNewDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstNewDB\EF_CodeFirstNewDB\obj\Debug\EF_CodeFirstNewDB.csprojAssemblyReference.cache
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstNewDB\EF_CodeFirstNewDB\obj\Debug\EF_CodeFirstNewDB.csproj.CoreCompileInputs.cache
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstNewDB\EF_CodeFirstNewDB\obj\Debug\EF_CodeFirstNewDB.csproj.CopyComplete
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstNewDB\EF_CodeFirstNewDB\obj\Debug\EF_CodeFirstNewDB.exe
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstNewDB\EF_CodeFirstNewDB\obj\Debug\EF_CodeFirstNewDB.pdb
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstNewDB\EF_CodeFirstNewDB\obj\Debug\EF_CodeFirstNewDB.Migrations.InitialDB.resources
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstNewDB\EF_CodeFirstNewDB\obj\Debug\EF_CodeFirstNewDB.csproj.GenerateResource.cache
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstNewDB\EF_CodeFirstNewDB\bin\Debug\EF_CodeFirstNewDB.exe.config
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstNewDB\EF_CodeFirstNewDB\bin\Debug\EF_CodeFirstNewDB.exe
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstNewDB\EF_CodeFirstNewDB\bin\Debug\EF_CodeFirstNewDB.pdb
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstNewDB\EF_CodeFirstNewDB\bin\Debug\EntityFramework.dll
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstNewDB\EF_CodeFirstNewDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstNewDB\EF_CodeFirstNewDB\bin\Debug\EntityFramework.xml
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstNewDB\EF_CodeFirstNewDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstNewDB\EF_CodeFirstNewDB\obj\Debug\EF_CodeFirstNewDB.csprojAssemblyReference.cache
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstNewDB\EF_CodeFirstNewDB\obj\Debug\EF_CodeFirstNewDB.csproj.CopyComplete
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstNewDB\EF_CodeFirstNewDB\obj\Debug\EF_CodeFirstNewDB.exe
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstNewDB\EF_CodeFirstNewDB\obj\Debug\EF_CodeFirstNewDB.pdb
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstNewDB\EF_CodeFirstNewDB\obj\Debug\EF_CodeFirstNewDB.Migrations.InitialDB.resources
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstNewDB\EF_CodeFirstNewDB\obj\Debug\EF_CodeFirstNewDB.csproj.GenerateResource.cache
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\CodeFirstNewDB\EF_CodeFirstNewDB\obj\Debug\EF_CodeFirstNewDB.Migrations.AddNavigation.resources

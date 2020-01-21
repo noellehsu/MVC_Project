@@ -1,0 +1,19 @@
+﻿@using System.Web.Configuration
+
+@{
+    ViewBag.Title = "Index";
+
+    string connection = WebConfigurationManager.
+        ConnectionStrings["DashboardChartContext"].ConnectionString;
+
+    string bookTitle = WebConfigurationManager.AppSettings["BookTitle"];
+    string GmailSMTP = WebConfigurationManager.AppSettings["GmailSMTP"];
+}
+
+<h2>Index</h2>
+
+<div>
+    <p>Default Connection : @(connection) </p>
+    <p>Book Title : @bookTitle</p>
+    <p>Gmail SMTP :@GmailSMTP</p>
+</div>

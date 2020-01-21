@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "SetCookies";
+}
+
+<h2>SetCookies</h2>
+
+
+@ViewContext.HttpContext.Response.Cookies["Name"].Value
+<br />
+@ViewContext.HttpContext.Response.Cookies["Email"].Value
+<br />
+@ViewContext.HttpContext.Response.Cookies["Mobile"].Value

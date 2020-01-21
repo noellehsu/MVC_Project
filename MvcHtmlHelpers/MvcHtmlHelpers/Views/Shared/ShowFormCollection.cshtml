@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="alert alert-danger">顯示FormCollection集合中全部資料</h2>
+
+
+@{
+    //讀取Controller / Action傳送過來的TempData["Data"]資料
+    if (TempData["Data"] == null)
+    {
+        <h2>TempData沒有資料</h2>
+        return;
+    }
+
+    FormCollection fc = (FormCollection)TempData["Data"];
+}
+
+<div class="alert alert-info">方法1:使用foreach讀取FormCollection資料</div>
+<ul>
+    @foreach (string keyName in fc)
+    {
+        if (!keyName.Contains("__RequestVerificationToken"))
+        {
+            <li>@keyName : @fc[keyName]</li>
+        }
+    }
+</ul>
+
+<div class="alert alert-warning">方法2:使用for迴圈讀取FormCollection資料</div>
+<ul>
+    @for (int i = 0; i < fc.Count; i++)
+    {
+        if (!fc.Keys[i].Contains("__RequestVerificationToken"))
+        {
+            <li>@fc.Keys[i] :  @fc[i]</li>
+        }
+    }
+</ul>
+

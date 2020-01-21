@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+@Html.Encode(ViewContext.HttpContext.Response.Cookies["Name"].Value) <br />
+@Html.Encode(ViewContext.HttpContext.Response.Cookies["Email"].Value) <br />
+@Html.Encode(ViewContext.HttpContext.Response.Cookies["Mobile"].Value)

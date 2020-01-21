@@ -1,0 +1,83 @@
+﻿@using MvcHtmlHelpers.Models
+@model RegisterDataAnnotations
+
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <title>AllHelpers</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        div.panel-body > form > label {
+            width: 100px;
+            text-align: right;
+            margin-right: 0.5em;
+            padding-top: 0.2em;
+            padding-right: 1em;
+            font-weight: bold;
+            background-color: lightpink;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4>Editor() & EditorFor()遇到不同的資料型別, 會產生不同的控制項</h4>
+            </div>
+            <div class="panel-body bg-success">
+                <ul>
+                    <li>string --> @("<input type='text'>") </li>
+                    <li>[DataType(DataType.Password)] string--> @("<input type='password'>") </li>
+                    <li>[DataType(DataType.Email)] string--> @("<input type='email'>") </li>
+                    <li>int --> @("<input type='number'>") </li>
+                    <li>decimal, float --> @("<input type='number'>") </li>
+                    <li>boolean --> @("<input type='checkbox'>") </li>
+                    <li>Enum --> @("<input type='text'>") </li>
+                    <li>[DataType(DataType.Date)] DateTime --> @("<input type='date'>") </li>
+                    <li>[DataType(DataType.DateTime)]DateTime --> @("<input type='datetime'>") </li>
+                    <li>[DataType(DataType.MultilineText)] Comment --> @("<textarea>") </li>
+                    <li>[DataType(DataType.Url)] HomePage --> @("<a href='http://...'>http://... </a>") </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--EditorFor()-->
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4>Html.EditorFor()遇到不同的資料型別產生的不同控制項</h4>
+            </div>
+            <div class="panel-body bg-warning">
+                @using (Html.BeginForm())
+                {
+                    @Html.LabelFor(x => x.Id) @Html.EditorFor(x => x.Id)
+                    @Html.LabelFor(x => x.Name) @Html.EditorFor(x => x.Name)
+                    @Html.LabelFor(x => x.Password) @Html.EditorFor(x => x.Password)
+                    @Html.LabelFor(x => x.Email) @Html.EditorFor(x => x.Email)
+                    @Html.LabelFor(x => x.HomePage) @Html.EditorFor(x => x.HomePage)
+                    @Html.LabelFor(x => x.Gender) @Html.EditorFor(x => x.Gender)
+                    @Html.LabelFor(x => x.Birthday) @Html.EditorFor(x => x.Birthday)
+                    @Html.LabelFor(x => x.Birthday2) @Html.EditorFor(x => x.Birthday2)
+                    @Html.LabelFor(x => x.Money) @Html.EditorFor(x => x.Money)
+                    @Html.LabelFor(x => x.City) @Html.EditorFor(x => x.City)
+                    @Html.LabelFor(x => x.Comment) @Html.EditorFor(x => x.Comment)
+                    @Html.LabelFor(x => x.Terms) @Html.EditorFor(x => x.Terms)
+
+                    <input type="submit" value="Submit" class="btn btn-primary" />
+                }
+            </div>
+        </div>
+
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script>
+        $(function () {
+            $("<br/>").insertAfter("input");
+            $("<br/>").insertAfter("textarea");
+        });
+    </script>
+</body>
+</html>

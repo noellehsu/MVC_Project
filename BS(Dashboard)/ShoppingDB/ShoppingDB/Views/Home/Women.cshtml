@@ -1,0 +1,29 @@
+﻿@model List<Clothing>
+
+@{
+    ViewBag.Title = "Woman";
+}
+
+<div class="row">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <a href="#"><img src='~/Assets/images/Banner/@ViewData["TopBanner"]' style="width:100%" /></a>
+    </div>
+</div>
+
+<br /><br />
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        @Html.Partial("_ClothingPartial", item)
+    }
+</div>
+
+@section topCSS
+{
+    <style>
+        div.card {
+            margin-bottom: 10px;
+        }
+    </style>
+}

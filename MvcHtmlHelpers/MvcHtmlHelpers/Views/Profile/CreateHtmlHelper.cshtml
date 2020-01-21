@@ -1,0 +1,131 @@
+﻿@using MvcHtmlHelpers.Helpers
+@using MvcHtmlHelpers.Models
+@model RegisterDataAnnotations
+
+@{
+    ViewBag.Title = "CreateHtmlHelper";
+    //從公用Utility類別取得SelectListItem集合
+    var CityList = Utility.getCityList();
+    var GenderList = Utility.getGenderList();
+    var CommutermodeList = Utility.getCommutermode();
+    //從公用Utility類別取得MultiSelectList
+    var CommutermodeMList = Utility.getCommutermodeM();
+}
+
+<h2 class="alert bg-info text-center">使用者帳號註冊 : MVC HTML Helpers</h2>
+
+<div class="well">
+    <div class="text-danger">MVC HTML Helper係揉合HTML + Bootstrap及自身語法而成。</div>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <!--TextBox, Text-->
+        <div class="form-group">
+            @Html.LabelFor(m => m.Name, htmlAttributes: new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+            </div>
+        </div>
+        <!--Password-->
+        <div class="form-group">
+            @Html.LabelFor(m => m.Password, htmlAttributes: new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+            </div>
+        </div>
+        <!--TextBox, Email-->
+        <div class="form-group">
+            @Html.LabelFor(m => m.Email, htmlAttributes: new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", type = "email" })
+            </div>
+        </div>
+        <!--DropDownList, City-->
+        <div class="form-group">
+            @Html.LabelFor(m => m.City, htmlAttributes: new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.DropDownList("City", (List<SelectListItem>)CityList, "選擇縣市", new { @class = "form-control" })
+            </div>
+        </div>
+        <!--Radio, Gender-->
+        <div class="form-group">
+            @Html.LabelFor(m => m.Gender, htmlAttributes: new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                <div class="radio">
+                    @foreach (var item in (List<SelectListItem>)GenderList)
+                    {
+                        <label>@Html.RadioButton("Gender", item.Value) @item.Text</label>
+                    }
+                </div>
+            </div>
+        </div>
+        <!--ListBox, CommuterMode-->
+        <div class="form-group">
+            @Html.LabelFor(m => m.Commutermode, htmlAttributes: new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.ListBoxFor(m=>m.Commutermode, (List<SelectListItem>)CommutermodeList, new { @class = "form-control" })
+                @*@Html.ListBox("CommutermodeM", (MultiSelectList)CommutermodeMList, new { @class = "form-control" })*@
+            </div>
+        </div>
+        <!--TextArea, Comment-->
+        <div class="form-group">
+            @Html.LabelFor(m => m.Comment, htmlAttributes: new { @class = "col-md-2 control-label"})
+            <div class="col-md-10">
+                @Html.TextAreaFor(m => m.Comment, new { @class = "form-control", rows = "4", cols = "80", maxlength = "255", placeholder = "在這裡輸入您的意見"})
+            </div>
+        </div>
+        <!--CheckBox, Terms-->
+        <div class="form-group">
+            @Html.LabelFor(m => m.Terms, htmlAttributes: new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                <div class="checkbox">
+                    <label>
+                        @Html.CheckBoxFor(m => m.Terms)同意
+                    </label>
+                </div>
+                @*<label class="checkbox-inline">
+                        @Html.CheckBoxFor(m => m.Terms)同意
+                </label>*@
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Submit提交" class="btn btn-primary" />
+                <input type="reset" value="Reset重置" class="btn btn-danger" />
+            </div>
+        </div>
+    </div>
+}
+
+@section topCSS{
+    <style>
+        input, select, textarea {
+            max-width: none !important;
+        }
+
+        div.well, h2.alert {
+            margin-left: -15px !important;
+        }
+
+        label.col-md-2 {
+            padding-top: 0px !important;
+            background-color: aquamarine;
+            border-radius: 5px;
+            line-height: 32px !important;
+            border: 2px dashed black;
+            text-align: center !important;
+        }
+
+        input.form-control:hover {
+            background-color: lightpink !important;
+        }
+
+        input.form-control:focus {
+            background-color: antiquewhite !important;
+        }
+    </style>
+}

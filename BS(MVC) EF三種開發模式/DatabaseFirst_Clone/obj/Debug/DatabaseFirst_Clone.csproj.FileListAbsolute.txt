@@ -1,0 +1,14 @@
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirst_Clone\bin\Debug\northwnd.ldf
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirst_Clone\bin\Debug\northwnd.mdf
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirst_Clone\bin\Debug\DatabaseFirst_Clone.exe.config
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirst_Clone\bin\Debug\DatabaseFirst_Clone.exe
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirst_Clone\bin\Debug\DatabaseFirst_Clone.pdb
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirst_Clone\bin\Debug\EntityFramework.dll
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirst_Clone\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirst_Clone\bin\Debug\EntityFramework.xml
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirst_Clone\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirst_Clone\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirst_Clone\obj\Debug\DatabaseFirst_Clone.csprojAssemblyReference.cache
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirst_Clone\obj\Debug\DatabaseFirst_Clone.csproj.CopyComplete
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirst_Clone\obj\Debug\DatabaseFirst_Clone.exe
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirst_Clone\obj\Debug\DatabaseFirst_Clone.pdb

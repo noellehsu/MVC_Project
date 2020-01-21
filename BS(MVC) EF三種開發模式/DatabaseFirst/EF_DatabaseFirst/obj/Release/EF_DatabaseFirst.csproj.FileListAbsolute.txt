@@ -1,0 +1,16 @@
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirst\EF_DatabaseFirst\bin\Release\EF_DatabaseFirst.exe.config
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirst\EF_DatabaseFirst\bin\Release\EF_DatabaseFirst.exe
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirst\EF_DatabaseFirst\bin\Release\EF_DatabaseFirst.pdb
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirst\EF_DatabaseFirst\bin\Release\EntityFramework.dll
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirst\EF_DatabaseFirst\bin\Release\EntityFramework.SqlServer.dll
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirst\EF_DatabaseFirst\bin\Release\EntityFramework.xml
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirst\EF_DatabaseFirst\bin\Release\EntityFramework.SqlServer.xml
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirst\EF_DatabaseFirst\bin\Release\zh-Hant\EntityFramework.resources.dll
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirst\EF_DatabaseFirst\bin\Release\zh-Hant\EntityFramework.SqlServer.resources.dll
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirst\EF_DatabaseFirst\obj\Release\EF_DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirst\EF_DatabaseFirst\obj\Release\EF_DatabaseFirst.csproj.CopyComplete
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirst\EF_DatabaseFirst\obj\Release\EF_DatabaseFirst.exe
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirst\EF_DatabaseFirst\obj\Release\EF_DatabaseFirst.pdb
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirst\EF_DatabaseFirst\bin\Release\northwnd.ldf
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirst\EF_DatabaseFirst\bin\Release\northwnd.mdf
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirst\EF_DatabaseFirst\obj\Release\EF_DatabaseFirst.csprojAssemblyReference.cache

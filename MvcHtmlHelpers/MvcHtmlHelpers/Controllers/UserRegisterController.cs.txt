@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using MvcHtmlHelpers.Models;
+
+namespace MvcHtmlHelpers.Controllers
+{
+    public class UserRegisterController : Controller
+    {
+        CmsContext db = new CmsContext();
+
+        // GET: UserRegister
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(Register register)
+        {
+            if (register.Terms == false)
+            {
+                ModelState.AddModelError("Terms", "必須同意條款才能註冊!");
+                return View(register);
+            }
+
+            if (ModelState.IsValid)
+            {
+                db.Registers.Add(register);
+                db.SaveChanges();
+
+                TempData["RegisterResult"] = true;
+
+                return RedirectToAction("Index");
+            }
+
+            return View(register);
+        }
+    }
+}

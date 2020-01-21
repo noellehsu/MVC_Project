@@ -1,0 +1,62 @@
+﻿@model Product
+
+@{
+    ViewBag.Title = "PassClothingData";
+
+    //JOSON.Encode無法正確編碼複雜一點的C#物件型別
+    string json = Html.Encode(Model);
+
+    //必須使用Newtonsoft.Json.JsonConvert才能正確編碼
+    string jsonProduct = Newtonsoft.Json.JsonConvert.SerializeObject(Model);
+    IHtmlString rawProduct = Html.Raw(jsonProduct);
+
+    //Photos
+    string photosJson = Model.PhotosJson;
+    var photos = Json.Decode(photosJson); //將JSON字串解碼成C#物件
+
+    //Clothings
+    List<Clothing> clothing = Model.Clothings;
+}
+
+<h2>PassClothingData</h2>
+
+<table class="table table-striped table-hover table-bordered">
+    <caption>ProductId :@Model.ProductId , Price : @Model.Price</caption>
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(x => x.Clothings.First().ClothingId)</th>
+            <th>@Html.DisplayNameFor(x => x.Clothings.First().Description)</th>
+            <th>@Html.DisplayNameFor(x => x.Clothings.First().Size)</th>
+            <th>@Html.DisplayNameFor(x => x.Clothings.First().UnitInStock)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in clothing)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.ClothingId)</td>
+                <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                <td>@Html.DisplayFor(modelItem => item.Size)</td>
+                <td>@Html.DisplayFor(modelItem => item.UnitInStock)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@foreach(var photo in photos)
+{
+    <p><img src="~/Assets/images/@photo" /></p>
+}
+
+@section endJS
+{
+    <script>
+        //將JOSN資料指派給JavaScript，成為JS Object
+        var jsProductObject = @rawProduct;
+
+        var clothing = jsProductObject.Clothings[0];
+
+        alert(clothing.ClothingId + "," + clothing.Description);
+    </script>
+}
+

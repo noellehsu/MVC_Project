@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "ReadCookies";
+}
+
+<h2>ReadCookies</h2>
+
+
+@*使用Server. HtmlEncode()方法對Cookie資料值進行編碼，以防止惡意的程式碼隱藏其中。*@
+@Server.HtmlEncode(ViewContext.HttpContext.Request.Cookies["Name"].Value)
+<br />
+@Server.HtmlEncode(ViewContext.HttpContext.Request.Cookies["Email"].Value)
+<br />
+@Server.HtmlEncode(ViewContext.HttpContext.Request.Cookies["Mobile"].Value)
+

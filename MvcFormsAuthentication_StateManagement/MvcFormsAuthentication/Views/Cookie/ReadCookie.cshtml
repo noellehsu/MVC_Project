@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "AboutMe";
+}
+
+<h2>AboutMe</h2>
+
+@Html.Encode(ViewContext.HttpContext.Request.Cookies["Name"].Value) <br />
+@Html.Encode(ViewContext.HttpContext.Request.Cookies["Email"].Value) <br />
+@Html.Encode(ViewContext.HttpContext.Request.Cookies["Mobile"].Value)
+

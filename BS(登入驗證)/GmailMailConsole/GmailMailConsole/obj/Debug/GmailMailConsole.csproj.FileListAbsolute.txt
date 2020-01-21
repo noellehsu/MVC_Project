@@ -1,0 +1,13 @@
+Y:\ASP.NET Identity\GmailMailConsole\GmailMailConsole\bin\Debug\MailConsole.exe.config
+Y:\ASP.NET Identity\GmailMailConsole\GmailMailConsole\bin\Debug\MailConsole.exe
+Y:\ASP.NET Identity\GmailMailConsole\GmailMailConsole\bin\Debug\MailConsole.pdb
+Y:\ASP.NET Identity\GmailMailConsole\GmailMailConsole\obj\Debug\GmailMailConsole.csprojAssemblyReference.cache
+Y:\ASP.NET Identity\GmailMailConsole\GmailMailConsole\obj\Debug\GmailMailConsole.csproj.CoreCompileInputs.cache
+Y:\ASP.NET Identity\GmailMailConsole\GmailMailConsole\obj\Debug\MailConsole.exe
+Y:\ASP.NET Identity\GmailMailConsole\GmailMailConsole\obj\Debug\MailConsole.pdb
+C:\BS(登入驗證)\GmailMailConsole\GmailMailConsole\bin\Debug\MailConsole.exe.config
+C:\BS(登入驗證)\GmailMailConsole\GmailMailConsole\bin\Debug\MailConsole.exe
+C:\BS(登入驗證)\GmailMailConsole\GmailMailConsole\bin\Debug\MailConsole.pdb
+C:\BS(登入驗證)\GmailMailConsole\GmailMailConsole\obj\Debug\GmailMailConsole.csprojAssemblyReference.cache
+C:\BS(登入驗證)\GmailMailConsole\GmailMailConsole\obj\Debug\MailConsole.exe
+C:\BS(登入驗證)\GmailMailConsole\GmailMailConsole\obj\Debug\MailConsole.pdb

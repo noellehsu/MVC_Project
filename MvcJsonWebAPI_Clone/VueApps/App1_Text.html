@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <!--Vue.js 的CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+
+    <div id="app1">
+        {{message}}
+    </div>
+
+    <script>
+
+        var app = new Vue({
+            el: '#app1',
+            data: {message:'Hello Vue!'}
+
+
+        })
+
+
+    </script>
+
+
+</body>
+</html>

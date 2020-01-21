@@ -1,0 +1,84 @@
+﻿
+
+@{
+    ViewBag.Title = "Create HTML Form";
+}
+
+<h2 class="alert bg-info text-center">使用者帳號註冊 : HTML Form</h2>
+
+<!--原生的HTML Elements / Form Elements -->
+<form action="/Profile/CreateHtml" method="post">
+    <!--TextBox, Text-->
+    <label for="name">姓名 :</label> &emsp;
+    <input type="text" name="name" id="name" /> <br />
+    <!--TextBox, Password-->
+    <label for="password">密碼 :</label> &emsp;
+    <input type="password" name="password" id="password"/> <br />
+    <!--TextBox, Email-->
+    <label for="email">電郵 :</label> &emsp;
+    <input type="email" name="email" id="email"/> <br />
+    <!--DropDownList, City-->
+    <label for="city">縣市 :</label> &emsp;
+    <select name="city" id="city">
+        <option value="0">請選擇</option>
+        <option value="1" selected>基隆市</option>
+        <option value="2">台北市</option>
+        <option value="3">新北市</option>
+        <option value="4">桃園市</option>
+        <option value="5">新竹市</option>
+        <option value="6">新竹縣</option>
+        <option value="7">苗粟縣</option>
+        <option value="8">台中市</option>
+        <option value="9">南投縣</option>
+        <option value="10">彰化縣</option>
+        <option value="11">雲林縣</option>
+        <option value="12">嘉義市</option>
+        <option value="13">嘉義縣</option>
+        <option value="14">台南市</option>
+        <option value="15">高雄市</option>
+        <option value="16">屏東縣</option>
+        <option value="17">台東縣</option>
+        <option value="18">花蓮縣</option>
+        <option value="19">宜蘭縣</option>
+        <option value="20">澎湖縣</option>
+        <option value="21">金門縣</option>
+        <option value="22">連江縣</option>
+    </select><br />
+    <!--Radio, Gender-->
+    <label for="gender">性別 :</label> &emsp;
+    <input type="radio" name="gender" id="gender" value="female">女性&emsp;
+    <input type="radio" name="gender" id="gender"  value="male">男性&emsp;
+    <input type="radio" name="gender" id="gender"  value="other">其他<br />
+    <!--ListBox, CommuteMode-->
+    <label for="commutermode">通勤 :</label> &emsp;
+    <select  name="commutermode" id="commutermode" multiple>
+        <option value="1">腳踏車</option>
+        <option value="2" selected>機車</option>
+        <option value="3">汽車</option>
+        <option value="4" selected>捷運</option>
+        <option value="5">巴士</option>
+        <option value="6">高鐡</option>
+        <option value="7">飛機</option>
+    </select><br />
+    <!--TextArea, Comment-->
+    <label for="comment">意見 :</label> &emsp;
+    <textarea  name="comment" id="comment" rows="4" cols="80" maxlength="255" placeholder="這裡可以輸入備註留言..."></textarea><br />  
+    <!--CheckBox, Terms-->
+    <label for="terms">條款 :</label> &emsp;
+    <label>
+        <input type="checkbox" name="terms" id="terms" value="true" />同意
+    </label><br />  
+    <input type="submit" value="Submit提交" />
+</form>
+
+@section topCSS{
+    <style>
+        select{
+            width:150px;
+        }
+        select[multiple] {
+            width: 200px;
+            height: 130px;
+        }
+    </style>
+}

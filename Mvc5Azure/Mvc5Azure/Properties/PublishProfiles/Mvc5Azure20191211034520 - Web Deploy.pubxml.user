@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此檔案由您的 Web 專案發佈/封裝處理序使用。您可以藉由編輯此 MSBuild 檔案，
+自訂此處理序的行為。若要深入了解，請前往 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3558HeJy90WiP/Nuk8W9vQAAAAACAAAAAAAQZgAAAAEAACAAAACzhNMJlx+Pr4hcZQYXlUycICGweeCVVZLNhKfzr5G/uAAAAAAOgAAAAAIAACAAAAAO2SUZWZQFBiESEEhfPAHh8pPjcAVoQVX5iRR2fmRJZ4AAAAB7xzt6b1fY9TFdLoBbSteC3yowJMpnYo+iua9OLKAWbpNrSpN1iXlVWDNl7sdGGnSI2VShBkvT/myW0nqXzbj0+JL78QaPQHVGMO7v4iCSzWBy7uH6evRiMgCpjFS7rQ2d0b5GudBKYPuGqcTeyJloroz6q1ml1OL/yWi7yv3lFkAAAABLQK2hCsIV2+98599nw+6LCneNYXmkRk+Z+xdtq6YSMy8CKkxq8T66K0Blt3Bsss5Fod8P76YaeyBHpD0SxMph</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <AzureDBConnectionStrings Include="Data Source=tcp:mvc5azure20191211034520dbserver.database.windows.net,1433;Initial Catalog=Mvc5Azure20191211034520_db1;User Id=Noelle@mvc5azure20191211034520dbserver;Password=Zxcasdqwe123." />
+    <AzureDBConnectionStrings Include="Data Source=tcp:mvc5azure20191211034520dbserver.database.windows.net,1433;Initial Catalog=Mvc5Azure20191211034520_db;User Id=Noelle@mvc5azure20191211034520dbserver;Password=Zxcasdqwe123." />
+  </ItemGroup>
+</Project>

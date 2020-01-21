@@ -1,0 +1,122 @@
+﻿@model ProductViewModel
+
+@{
+    ViewBag.Title = "FindProductById";
+}
+
+<h2>FindProductById</h2>
+
+<div>
+    <h4>ProductViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductId)
+        </dt>
+
+        <dd id="ProductId" name="ProductId">
+            @*抓節點資料*@
+            @Html.DisplayFor(model => model.ProductId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+
+        <dd id="ProductName" name="ProductName">
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd id="Title" name="Title">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd id="Description" name="Description">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Photo)
+
+
+        </dt>
+
+        <dd>
+            @*@Html.DisplayFor(model => model.Photo)*@
+            <img src="~/Assets/images/@Model.Photo" alt="@Model.Title">
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd id="Price" name="Price">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnitInStock)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnitInStock)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Count)
+        </dt>
+
+        <dd id="Count" name="Count">
+            @Html.DisplayFor(model => model.Count)
+        </dd>
+
+    </dl>
+</div>
+
+
+<button onclick="postValue()">加入購物車</button> @*把value傳送到Action*@
+
+<p id="returnValue"></p>
+
+@section endJS{
+    <script>
+        //抓value
+        function postValue() {
+            var productId = $("#ProductId").text();
+            var productName = $("#ProductName").text();
+            var price = $("#Price").text();
+            var count = $("#Count").text();
+
+
+            $.ajax({
+                type: "POST",
+                url: "/ShoppingCart/AddToCart", //ajax呼叫AddToCart(所以AddToCart不需要再做一個view)
+                //轉換成JSON格式資料給後端
+                data: { ProductId: productId, ProductName: productName, Price: price, Count: count },
+                dataType: "text",
+                
+                success: function (response) {
+                    alert(response);
+                    $("#MyCart").text("購物車(" + response + ")");
+                }
+            });
+
+            //$.post({
+            //    url: "https://localhost:44343/Home/CardApi",
+            //    data: { name: "John" }
+            //})
+            //.done(function(responseData){
+            //    alert(responseData);
+            //    $("#title").text(responseData);
+            //});
+        }
+    </script>
+}

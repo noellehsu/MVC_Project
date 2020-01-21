@@ -1,0 +1,117 @@
+﻿@{
+    ViewBag.Title = "BarTravel";
+    var footerText = DateTime.Now.Year + "年 / " + DateTime.Now.Month + "月投票統計結果";
+
+    var countries = Json.Encode(ViewBag.Countries);
+    var votes = Json.Encode(ViewBag.Votes);
+}
+
+<div class="container">
+    <div class="jumbotron alert-success">
+        <h2>以Bar Chart長條圖繪製投票數</h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading"><h3>旅遊行程投票 - 直向</h3></div>
+            <div class="panel-body">
+                <canvas id="verticalBar"></canvas>
+            </div>
+            <div class="panel-footer">@footerText</div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading"><h3>旅遊行程投票 - 橫向</h3></div>
+            <div class="panel-body">
+                <canvas id="horizontalBar"></canvas>
+            </div>
+            <div class="panel-footer">@footerText </div>
+        </div>
+    </div>
+</div>
+
+@section endJS{
+    <script src="~/Assets/js/Utility.js"></script>
+    <script>
+    var ctx1 = document.getElementById("verticalBar");
+    var ctx2 = document.getElementById("horizontalBar");
+
+    //定義Enums列舉
+    const barDirection = {
+        vertial: 'bar',
+        horizontal: 'horizontalBar'
+    };
+
+    //直向Bar長條圖
+    BarChart(ctx1, barDirection.vertial);
+
+    //橫向Bar長條圖
+    BarChart(ctx2, barDirection.horizontal);
+
+    //繪製Bar長條圖
+    function BarChart(context, barChartDirection) {
+        if (!(barChartDirection == 'bar' || barChartDirection == 'horizontalBar')) {
+            return;
+        }
+
+        var myChart = new Chart(context, {
+            type: barChartDirection,
+            data: {
+                labels: @Html.Raw(countries),
+                datasets: [{
+                    label: '旅遊行程投票',
+                    data: @Html.Raw(votes),
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                barPercentage: 1,
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                        }
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                        }
+                    }],
+                }
+            }
+        });
+    }
+    </script>
+}
+
+@section topCSS{
+    <style>
+        .panel {
+            margin-top: 10px;
+        }
+
+        .panel-heading, .panel-footer {
+            text-align: center;
+        }
+    </style>
+}

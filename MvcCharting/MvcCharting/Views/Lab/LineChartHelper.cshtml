@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "LineChartHelper";
+
+    //以下示範兩種方式:
+    //1.原始資料是C#陣列資料
+    string[] monthLabels = { "1月", "2月", "3月", "4月", "5月", "6月" };
+    decimal[] monthData = { 16, 15, 18, 21, 25, 27 };
+
+    //(1)C#字串陣列必須先編碼成JSON字串陣列結構的文字檔
+    //JSON編碼後: "[\"1月\",\"2月\",\"3月\",\"4月\",\"5月\",\"6月\"]"
+    var jsonMonths = Json.Encode(monthLabels);
+
+    //然後在View先用Html.Raw()將JSON字串陣列轉成System.Web.IHtmlString型別,
+    //再傳入@helper中, 因為@helper中無法使用Html.Raw()方法
+    //Html.Raw()後: {["1月","2月","3月","4月","5月","6月"]}
+    var rawMonths = Html.Raw(jsonMonths);
+
+    //(2)將資料編碼成JSON格式,然後再用Html.Raw()回傳System.Web.IHtmlString
+    var jsonData = Json.Encode(monthData);
+    var rawData = Html.Raw(jsonData);
+
+
+    // 2.原始資料就是JSON陣列字串格式
+    string jsonLabels = "['1月', '2月', '3月', '4月', '5月', '6月']";
+    string jsonData2 = "[16, 15, 18, 21, 25, 27]";
+    var rawLabels = Html.Raw(jsonLabels);
+    var rawData2 = Html.Raw(jsonData2);
+
+    //評論:以上兩種方式各有適用情境,第一種適合資料原本就是C#物件或陣列結構/或資料來自資料庫
+    //第二種固定字串是原本需求就是很固定,或只是想省事點,不考慮資料動態變化
+}
+
+
+<div class="jumbotron alert-success">
+    <h2>以Line Chart折線圖繪製月均溫趨勢變化</h2>
+    <h4>使用@@Helpers , @@functions</h4>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <canvas id="Chart1"></canvas>
+    </div>
+    <div class="col-md-4">
+        <canvas id="Chart2"></canvas>
+    </div>
+    <div class="col-md-4">
+        <canvas id="Chart3"></canvas>
+    </div>
+</div>
+
+@ChartHelpers.Line("Chart1", rawMonths, "臺北", rawData)
+@ChartHelpers.Line("Chart2", rawLabels, "臺北", rawData2)
+
+<!--使用泛型方法-->
+@ChartHelpers.Line("Chart3", MyFunctions.getJsonRawString<string[]>(monthLabels), "臺北", MyFunctions.getJsonRawString<decimal[]>(monthData))
+
+
+
+
+
+
+

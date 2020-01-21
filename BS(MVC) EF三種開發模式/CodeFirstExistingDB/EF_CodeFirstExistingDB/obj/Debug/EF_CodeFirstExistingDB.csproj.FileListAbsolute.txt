@@ -1,0 +1,13 @@
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstExistingDB\EF_CodeFirstExistingDB\bin\Debug\EF_CodeFirstExistingDB.exe.config
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstExistingDB\EF_CodeFirstExistingDB\bin\Debug\EF_CodeFirstExistingDB.exe
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstExistingDB\EF_CodeFirstExistingDB\bin\Debug\EF_CodeFirstExistingDB.pdb
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstExistingDB\EF_CodeFirstExistingDB\bin\Debug\EntityFramework.dll
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstExistingDB\EF_CodeFirstExistingDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstExistingDB\EF_CodeFirstExistingDB\bin\Debug\EntityFramework.xml
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstExistingDB\EF_CodeFirstExistingDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstExistingDB\EF_CodeFirstExistingDB\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstExistingDB\EF_CodeFirstExistingDB\bin\Debug\zh-Hant\EntityFramework.SqlServer.resources.dll
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstExistingDB\EF_CodeFirstExistingDB\obj\Debug\EF_CodeFirstExistingDB.csproj.CoreCompileInputs.cache
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstExistingDB\EF_CodeFirstExistingDB\obj\Debug\EF_CodeFirstExistingDB.csproj.CopyComplete
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstExistingDB\EF_CodeFirstExistingDB\obj\Debug\EF_CodeFirstExistingDB.exe
+C:\MvcExamples3nd\Chapter12\EF_CodeFirstExistingDB\EF_CodeFirstExistingDB\obj\Debug\EF_CodeFirstExistingDB.pdb

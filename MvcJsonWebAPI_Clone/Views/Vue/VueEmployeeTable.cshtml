@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "VueEmployeeTable";
+}
+
+
+<div id="app1">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th> Id </th>
+                <th> Name </th>
+                <th> Email </th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr v-for="item in employees">
+                <td>{{item.Id}}</td>
+                <td>{{item.Name}}</td>
+                <td>{{item.Email}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+@section endJS{
+    <script>
+
+     
+
+        var app = new Vue({
+            el: '#app1',
+            data: {
+                //employees: [
+                //    { Id: '1', Name: 'Kevin', Email: 'kevin@gmail.com' },
+                //    { Id: '2', Name: 'David', Email: 'david@gmail.com' },
+                //    { Id: '3', Name: 'Mary', Email: 'mary@gmail.com' }
+                //]
+
+                employees : @Html.Raw(ViewData["Employees"])
+
+            }
+        })
+
+    </script>
+}

@@ -1,0 +1,7 @@
+Y:\Mvc5Practice\MailConsole\MailConsole\bin\Debug\MailConsole.exe.config
+Y:\Mvc5Practice\MailConsole\MailConsole\bin\Debug\MailConsole.exe
+Y:\Mvc5Practice\MailConsole\MailConsole\bin\Debug\MailConsole.pdb
+Y:\Mvc5Practice\MailConsole\MailConsole\obj\Debug\MailConsole.csprojAssemblyReference.cache
+Y:\Mvc5Practice\MailConsole\MailConsole\obj\Debug\MailConsole.csproj.CoreCompileInputs.cache
+Y:\Mvc5Practice\MailConsole\MailConsole\obj\Debug\MailConsole.exe
+Y:\Mvc5Practice\MailConsole\MailConsole\obj\Debug\MailConsole.pdb

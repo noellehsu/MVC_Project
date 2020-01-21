@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "PieSalesData";
+}
+
+<div class="jumbotron alert-success">
+    <h2>模範生網路購物公司年度產品營收及貢獻度</h2>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <canvas id="peiChart"></canvas>
+    </div>
+    <div class="col-md-6">
+        <canvas id="doughnutChart"></canvas>
+    </div>
+</div>
+
+@section endJS{
+<script src="~/Assets/js/Utility.js"></script>
+<script>
+    //Pie Chart圓餅圖
+    var ctxPie = document.getElementById("peiChart");
+    var pieChart = new Chart(ctxPie, {
+        type: 'pie',
+        data: {
+            labels: ['3C電子', '食品', '服飾', '保養品', '鞋子', '家電'],
+            datasets: [{
+                data: [39.1, 8.7, 15, 14, 8, 15.2],
+                backgroundColor: [
+                    window.chartColors.red,
+                    window.chartColors.blue,
+                    window.chartColors.orange,
+                    window.chartColors.yellow,
+                    window.chartColors.green,
+                    window.chartColors.purple
+                ]
+            }],
+        },
+        options: {
+            responsive: true,
+            title: {
+                display: true,
+                fontSize: 26,
+                text: '產品營收比重%'
+            },
+            tooltips: {
+                mode: 'point',
+                intersect: true,
+            },
+            legend: {
+                position: 'bottom',
+                labels: {
+                    fontColor: 'black',
+                }
+            }
+        }
+    });
+
+    //Doughnut Chart甜甜圈圖
+    var ctxDoughnut = document.getElementById("doughnutChart");
+    var pieChart = new Chart(ctxDoughnut, {
+        type: 'doughnut',
+        data: {
+            labels: ['中國', '日本', '韓國', '越南', '泰國', '新加坡'],
+            datasets: [{
+                data: [45, 11, 14, 8, 10, 12],
+                backgroundColor: [
+                    window.chartColors.yellow,
+                    window.chartColors.orange,
+                    window.chartColors.blue,
+                    window.chartColors.red,
+                    window.chartColors.green,
+                    window.chartColors.purple
+                ]
+            }],
+        },
+        options: {
+            responsive: true,
+            title: {
+                display: true,
+                fontSize: 26,
+                text: '國家地區營收貢獻度%'
+            },
+            legend: {
+                position: 'bottom',
+                labels: {
+                    fontColor: 'black',
+                }
+            }
+        }
+    });
+</script>    
+}

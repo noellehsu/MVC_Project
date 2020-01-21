@@ -1,0 +1,27 @@
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirstCRUD\EF_DatabaseFirstCRUD\bin\Debug\EF_DatabaseFirstCRUD.exe.config
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirstCRUD\EF_DatabaseFirstCRUD\bin\Debug\EF_DatabaseFirstCRUD.exe
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirstCRUD\EF_DatabaseFirstCRUD\bin\Debug\EF_DatabaseFirstCRUD.pdb
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirstCRUD\EF_DatabaseFirstCRUD\bin\Debug\EntityFramework.dll
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirstCRUD\EF_DatabaseFirstCRUD\bin\Debug\EntityFramework.SqlServer.dll
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirstCRUD\EF_DatabaseFirstCRUD\bin\Debug\EntityFramework.xml
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirstCRUD\EF_DatabaseFirstCRUD\bin\Debug\EntityFramework.SqlServer.xml
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirstCRUD\EF_DatabaseFirstCRUD\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirstCRUD\EF_DatabaseFirstCRUD\bin\Debug\zh-Hant\EntityFramework.SqlServer.resources.dll
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirstCRUD\EF_DatabaseFirstCRUD\obj\Debug\EF_DatabaseFirstCRUD.csprojAssemblyReference.cache
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirstCRUD\EF_DatabaseFirstCRUD\obj\Debug\EF_DatabaseFirstCRUD.csproj.CoreCompileInputs.cache
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirstCRUD\EF_DatabaseFirstCRUD\obj\Debug\EF_DatabaseFirstCRUD.csproj.CopyComplete
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirstCRUD\EF_DatabaseFirstCRUD\obj\Debug\EF_DatabaseFirstCRUD.exe
+C:\MvcExamples3nd\Chapter11\EF_DatabaseFirstCRUD\EF_DatabaseFirstCRUD\obj\Debug\EF_DatabaseFirstCRUD.pdb
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirstCRUD\EF_DatabaseFirstCRUD\bin\Debug\EF_DatabaseFirstCRUD.exe.config
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirstCRUD\EF_DatabaseFirstCRUD\bin\Debug\EF_DatabaseFirstCRUD.exe
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirstCRUD\EF_DatabaseFirstCRUD\bin\Debug\EF_DatabaseFirstCRUD.pdb
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirstCRUD\EF_DatabaseFirstCRUD\bin\Debug\EntityFramework.dll
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirstCRUD\EF_DatabaseFirstCRUD\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirstCRUD\EF_DatabaseFirstCRUD\bin\Debug\EntityFramework.xml
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirstCRUD\EF_DatabaseFirstCRUD\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirstCRUD\EF_DatabaseFirstCRUD\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirstCRUD\EF_DatabaseFirstCRUD\bin\Debug\zh-Hant\EntityFramework.SqlServer.resources.dll
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirstCRUD\EF_DatabaseFirstCRUD\obj\Debug\EF_DatabaseFirstCRUD.csprojAssemblyReference.cache
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirstCRUD\EF_DatabaseFirstCRUD\obj\Debug\EF_DatabaseFirstCRUD.csproj.CopyComplete
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirstCRUD\EF_DatabaseFirstCRUD\obj\Debug\EF_DatabaseFirstCRUD.exe
+C:\Users\Noelle\OneDrive\BuildSchool\BS(MVC) EF三種開發模式\DatabaseFirstCRUD\EF_DatabaseFirstCRUD\obj\Debug\EF_DatabaseFirstCRUD.pdb
